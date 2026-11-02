@@ -1,0 +1,230 @@
+/* ===== Paleta de cores ===== */
+:root {
+  --roxo-escuro: #1e1633;
+  --roxo-medio: #3b2a63;
+  --roxo-claro: #6b5b95;
+  --lilas: #e9e4f5;
+  --amarelo: #e8b93c;
+  --branco: #faf9fd;
+  --texto: #2a2438;
+}
+
+/* ===== Reset basico ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+  background-color: var(--branco);
+  color: var(--texto);
+  line-height: 1.6;
+}
+
+/* ===== Cabecalho ===== */
+header {
+  background-color: var(--roxo-escuro);
+  color: var(--branco);
+  padding: 24px 40px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.2rem;
+  letter-spacing: 2px;
+  margin-bottom: 16px;
+}
+
+/* ===== Menu de navegacaoo ===== */
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+nav a {
+  color: var(--lilas);
+  text-decoration: none;
+  padding: 8px 18px;
+  border-radius: 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+  background-color: var(--amarelo);
+  color: var(--roxo-escuro);
+}
+
+/* ===== Conteudo principal ===== */
+main {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 24px;
+}
+
+/* ===== Rodape ===== */
+footer {
+  background-color: var(--roxo-escuro);
+  color: var(--lilas);
+  text-align: center;
+  padding: 20px;
+  margin-top: 60px;
+  font-size: 0.9rem;
+}
+
+.apresentacao {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.apresentacao h2,
+.destaques h2 {
+  color: var(--roxo-medio);
+  font-size: 1.8rem;
+  margin-bottom: 16px;
+}
+
+.apresentacao p {
+  max-width: 700px;
+  margin: 0 auto 12px;
+}
+
+.destaques h2 {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+}
+
+.card {
+  background-color: var(--lilas);
+  border-radius: 12px;
+  padding: 24px;
+  text-align: center;
+  border-bottom: 4px solid var(--amarelo);
+}
+
+.card h3 {
+  color: var(--roxo-escuro);
+  margin-bottom: 8px;
+}
+
+.card p {
+  margin-bottom: 16px;
+}
+
+.card .botao {
+  display: inline-block;
+  background-color: var(--roxo-medio);
+  color: var(--branco);
+  text-decoration: none;
+  padding: 8px 20px;
+  border-radius: 20px;
+}
+
+.card .botao:hover {
+  background-color: var(--amarelo);
+  color: var(--roxo-escuro);
+}
+
+.card img {
+  display: block;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  transition: transform 0.3s;
+}
+
+.card img:hover {
+  transform: scale(1.03);
+}
+
+nav a.ativo {
+  background-color: var(--roxo-medio);
+  color: var(--branco);
+}
+
+.topo-pagina {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.topo-pagina h2 {
+  color: var(--roxo-medio);
+  font-size: 1.8rem;
+  margin-bottom: 12px;
+}
+
+.topo-pagina p {
+  max-width: 700px;
+  margin: 0 auto 24px;
+}
+
+.topo-pagina img {
+  width: 100%;
+  max-height: 320px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.artistas {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.artista {
+  background-color: var(--lilas);
+  border-left: 5px solid var(--amarelo);
+  border-radius: 8px;
+  padding: 20px 24px;
+}
+
+.artista h3 {
+  color: var(--roxo-escuro);
+}
+
+.artista .detalhe {
+  color: var(--roxo-claro);
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+}
+
+.identificacao {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: var(--lilas);
+  padding: 32px;
+  border-radius: 12px;
+  border-bottom: 4px solid var(--amarelo);
+}
+
+.identificacao h3 {
+  color: var(--roxo-escuro);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.identificacao dl {
+  display: grid;
+  grid-template-columns: 130px 1fr;
+  gap: 12px 16px;
+}
+
+.identificacao dt {
+  font-weight: 600;
+  color: var(--roxo-medio);
+}
+
+.identificacao dd {
+  margin: 0;
+}
